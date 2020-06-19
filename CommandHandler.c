@@ -6,7 +6,7 @@
 int Handler(Node_t** ppHead) {
     int ID_=0; //Used for 'Delete'
     int in = getchar();
-    fflush(stdin); //clear the buffer after get()
+    clear(); //clear the buffer after get()
     switch(in) {
         case 'A':
         case 'a':
@@ -37,7 +37,7 @@ int Handler(Node_t** ppHead) {
         case 'd':
             printf("ID of student:");
             scanf("%d", &ID_);
-            fflush(stdin); //clear the buffer
+            clear(); //clear the buffer
             printf("Are you sure to delete student %d from the list? (y/n)", ID_);
             if (getchar() == 'y') {
                 deleteNode(ppHead,ID_);
@@ -56,6 +56,6 @@ int Handler(Node_t** ppHead) {
     //Reset the output
     system("@cls||clear"); //Clear output screen
     showSLL(*ppHead); //Print updated list
-    fflush(stdin); //clear the buffer after get()
+    clear(); //clear the buffer after get()
     return 0;
 }

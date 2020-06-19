@@ -6,6 +6,10 @@
 
 #include "SLL.h"
 
+void clear (void) {    
+  while ( getchar() != '\n' );
+}
+
 void showSLL(const Node_t *pHead) {
     const Node_t *pNext = pHead;
 
@@ -217,7 +221,7 @@ bool addNode(Node_t **ppHead) {
     printf("\tLinear Algebra: ");
     scanf("%f", &LinearAlg_);
 
-    fflush(stdin); //clear the buffer
+    clear(); //clear the buffer
 
     if (!legitScore(LinearAlg_)) {
         return false;
