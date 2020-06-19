@@ -1,0 +1,3 @@
+Name:Pham Minh Nhat-ID:12345 Age:21 Cal:9.00 Cpr:9.00 Lin:9.00
+Name:Tran Quang Duy-ID:12346 Age:21 Cal:9.00 Cpr:9.00 Lin:9.00
+Name:Le Phuong Duy-ID:12347 Age:21 Cal:9.00 Cpr:9.00 Lin:9.00
